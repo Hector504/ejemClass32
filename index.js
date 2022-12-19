@@ -4,7 +4,7 @@ const app = express()
 const PORT = process.env.PORT || 8080
 app.use(express.static('public'))
 
-app.get('/',(req,res)=>{
+app.get('/saludo',(req,res)=>{
   res.send('Hola bienvenido'+ process.env.NOMBRE)
 })
 
